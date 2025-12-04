@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: nwind
+    database: fea_academy
+    schema: northwind
+    tables:
+      - name: orders
+        description: Tabela de ordens do erp northwind
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+      - name: order_details
+
+    
